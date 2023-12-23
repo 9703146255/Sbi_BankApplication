@@ -12,8 +12,11 @@ public class Employee {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="emp_id")
 	private Integer empId;
+	@Column(name="emp_name")
 	private String empName;
+	@Column(name="emp_sal")
 	private Double empSal;
 
 	public Integer getEmpId() {
